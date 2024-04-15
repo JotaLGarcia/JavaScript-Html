@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculador IMC </title>
+
+    <script>
+
+        $peso = prompt("Digite o Seu Peso:")
+        $altura = prompt("Digite Sua Altura Em Centimetros:")
+
+        $conta = $altura * $altura / 10000
+
+        $IMC = $peso / $conta
+
+        if ($IMC < 18.5){
+            document.write('<a>')
+            document.write('<a href="Paginas/Verde.html"> Seu Resultado')
+
+            document.write('</a>')
+
+        }
+        else if ($IMC < 25) 
+        {
+
+            document.write('<a>')
+            document.write('<a href="Paginas/Amarelo.html"> Seu Resultado')
+
+            document.write('</a>')
+
+        }
+
+        else if ($IMC < 30) 
+        {
+            document.write('<a>')
+            document.write('<a href="Paginas/Laranja.html"> Seu Resultado')
+
+            document.write('</a>')
+        }
+        else  
+        {
+            document.write('<a>')
+            document.write('<a href="Paginas/Vermelho.html"> Seu Resultado')
+
+            document.write('</a>')
+        }
+
+    </script>
+
+</head>
+
+<body bgcolor="#e3e7af"">
+
+    <br><br>
+    <center>
+    <strong>
+    <font color=" #035e7b" size="7">
+    CALCULADORA IMC
+
+    <strong>
+        </font>
+        <br>
+
+        <img src="Paginas/img/IMC.jpg">
+
+        </center>
+
+</body>
+
+</html>

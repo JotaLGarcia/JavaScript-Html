@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Categoria Idade </title>
+
+    <script>
+
+    $Idade = prompt("Digite A Idade:")
+    $Imagem =("")
+    $Class =("")
+   
+    if ($Idade < 12) {
+        $Imagem =("<img src='Img/Criança.jpg' width='70%' >")
+        $Class =('Criança')
+       
+    }
+    else if($Idade < 18){
+        $Imagem =("<img src='Img/Jovem.jpg' width='70%' >")
+        $Class =('Jovem')
+
+    }
+    else if($Idade < 60){
+        $Imagem =("<img src='Img/Adulto.jpg' width='100%' >")
+        $Class =('Adulto')
+
+    }
+    else{
+        $Imagem =("<img src='Img/Idoso.jpg' width='50%' >")
+        $Class =('Idoso')
+
+    }
+        document.write("<center>")
+        document.write("<br><br>")
+
+        document.write("<Font size ='7' color='59c9a5'>")
+        document.write("CLASSIFICAÇÃO ETÁRIA")
+        document.write("</Font>")
+
+        document.write("<br><br>")
+
+        document.write("<table border='6'>")
+
+        document.write("<tr bgcolor='56e39f'>")
+
+        document.write("<td align='center'> <b> " + $Class + " </b> </td>")
+        document.write("<td align='center'> <b> " + $Idade + " </b> </td>")
+        document.write("<td align='center'> " + $Imagem + " </td>")
+
+        document.write("</tr>")
+        document.write("</table>")
+        
+        document.write("</center>")
+
+    </script>
+
+</head>
+<body bgcolor="0D0B2D">
+
+</body>
+</html>

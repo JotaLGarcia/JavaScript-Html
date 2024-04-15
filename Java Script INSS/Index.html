@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> INSS </title>
+
+    <script>
+
+        $Sal = prompt("Informe O Seu Salário:")
+        $Porcentagem =("")
+        $Porcent_aliquota =("")
+        $Valor_descontado_inss =("")
+        $Valor_rec =("")
+
+        if ($Sal < 1100.01) {
+            $Porcentagem = "7.5%"
+            $Porcent_aliquota = "0.075"
+        }
+        else if ($Sal < 2203.49) {
+            $Porcentagem = "9%"
+            $Porcent_aliquota = "0.09"
+
+        }
+        else if ($Sal < 3305.23) {
+            $Porcentagem = "12%"
+            $Porcent_aliquota = "0.12"
+
+        }
+        else {
+            $Porcentagem = "14%"
+            $Porcent_aliquota = "0.14"
+
+        }
+
+        //Calculando As Porcentagens 
+
+        $Valor_descontado_inss = ($Sal * $Porcent_aliquota)
+        $Valor_rec = ($Sal - $Valor_descontado_inss)
+
+        //Tabela
+
+        document.write("<center>")
+        document.write("<br><br>")
+
+        document.write("<Font size ='7' color='59c9a5'>")
+        document.write("<b>")
+        document.write("CLASSICAÇÃO INSS")
+        document.write("</b>")
+        document.write("</Font>")
+
+        document.write("<br><br>")
+
+        document.write("<table border='6'>")
+
+        document.write("<tr bgcolor='56e39f'>")
+
+        document.write("<td align='center'> <b> Salário </b> </td>")
+        document.write("<td align='center'> <b> Porcentagem </b> </td>")
+        document.write("<td align='center'> <b> Valor Descontado </b> </td>")
+        document.write("<td align='center'> <b> Valor Recebido </b> </td>")
+
+        document.write("</tr>")
+
+        document.write("<tr bgcolor='56e39f'>")
+        
+        document.write("<td align='center'> <b> "+ $Sal +" </b> </td>")
+        document.write("<td align='center'> <b> "+ $Porcentagem +" </b> </td>")
+        document.write("<td align='center'> <b> "+ $Valor_descontado_inss +" </b> </td>")
+        document.write("<td align='center'> <b> "+ $Valor_rec +" </b> </td>")
+        
+        document.write("</tr>")
+
+        document.write("</table>")
+
+        document.write("</center>")
+
+
+
+    </script>
+
+</head>
+
+<body bgcolor="0d0b2d">
+
+</body>
+
+</html>

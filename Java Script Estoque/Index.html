@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estoque </title>
+
+    <script>
+
+    $Quant = prompt("Infome A Quantidade no Estoque:")
+    $Result = ("")
+
+    if ($Quant < 50) {
+        $Result =('Estoque Baixo') 
+        
+    }
+    else if ($Quant < 100) {
+        $Result =('Estoque Normal')
+
+    }
+    else{
+        $Result =('Estoque Alto')
+
+    }
+
+    document.write("<center>")
+    document.write("<br><br>")
+
+    document.write("<Font size ='7' color='59c9a5'>")        
+    document.write("<b> ESTOQUE </b>")
+
+    document.write("</Font>")
+
+    document.write("<br><br>")
+
+    document.write("<table border='6'>")
+
+    document.write("<tr bgcolor='56e39f'>")
+
+    document.write("<td align='center'> <b> Quantidade </b> </td>")
+    document.write("<td align='center'> <b> Status </b> </td>")
+
+    document.write("</tr>")
+
+    document.write("<tr bgcolor='56e39f'>")
+
+    document.write("<td align='center'> <b> "+ $Quant +" </b> </td>")
+    document.write("<td align='center'> <b> "+ $Result +" </b> </td>")
+    
+    document.write("</tr>")
+
+    document.write("</table>")
+    
+    document.write("</center>")
+
+    </script>
+
+</head>
+<body bgcolor="0d0b2d" >
+    
+</body>
+</html>

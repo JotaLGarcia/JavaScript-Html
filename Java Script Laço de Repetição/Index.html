@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Java Script Laço de Repetição </title>
+
+    <script>
+
+        $J = (0)
+        $Numero_final = prompt("Digite O Número Limite Do Laço De Repetição")
+
+        document.write("<center>")
+        document.write("<h1> <font color='fc9e4f' Size='7'> Números Pares E Ímpares </font> </h1>")
+        
+
+        for ($J = 0; $J <= $Numero_final; $J++) {
+            document.write("<br> <font color='fc9e4f'> J: </font>" + "<font color='fc9e4f'> "+$J+" </font>") 
+
+            if ($J % 2 == 0) {
+                document.write("<font color='edd382'> - Par </font>")
+
+            }
+            else {
+                document.write("<font color='f2f3ae'> - Ímpar </font>")
+
+            }
+        }
+
+        document.write("</center>")
+    </script>
+
+</head>
+
+<body bgcolor="020122">
+
+
+</body>
+
+</html>

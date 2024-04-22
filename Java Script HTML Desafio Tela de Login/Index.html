@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function validarForm() {
+
+            $Login = this.form1.fLogin.value;
+            $Senha = this.form1.fSenha.value;
+            $Tamanho_login = $Login.length
+            $Tamanho_senha = $Senha.length
+
+            if ($Tamanho_login < 1) {
+                alert("Digite seu Login!!")
+                return false
+
+            }
+            if ($Tamanho_senha < 1) {
+                alert("Digite sua Senha!!")
+                return false
+                
+            }
+            if (($Login == "senai") && ($Senha == "sumare")) {
+                document.write("BEMM VINDO AMIGO!!")
+
+            }
+            else{
+                document.write("USUARIO OU SENHA INVÁLIDO!!")
+    
+            }
+        }
+
+    </script>
+
+</head>
+
+<body bgcolor="f2f3ae">
+
+    <center>
+
+    <form name="form1" method="post" action="" onsubmit=" return validarForm()">
+        
+        Login:<input type="text" name="fLogin" size="20" maxlength="60"><br>
+        <br>
+        Senha:<input type="password" name="fSenha" size="20" maxlength="60"><br>
+        <br><br>
+        
+        <input type="submit" value="Gravar">
+        <input type="reset" value="Limpar"> <!-- Limpar os Campos-->
+        
+        </form>
+    
+    </center>
+
+</body>
+</html>

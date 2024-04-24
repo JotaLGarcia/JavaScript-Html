@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function validarForm(){
+            $Login = this.form1.fLogin.value
+            $Senha = this.form1.fSenha.value
+
+            $Tamanho_login = $Login.length
+            $Tamanho_senha = $Senha.length
+
+            if ($Tamanho_login < 1) {
+                alert("Digite seu Login!")
+                return false
+            }
+            if ($Tamanho_senha < 1) {
+                alert("Digite sua Senha!")
+                return false   
+            }
+            if (($Login == "DrakeJL") && ($Senha == "153621")) {
+                alert("BEMM VINDO AMIGO!!")
+                window.location.href ='Acesso_concedido.html'
+            }
+            else{
+                alert("LOGIN OU SENHA INVÁLIDO!!")
+                window.location.href = 'Acesso_negado.html'
+        }
+        return false
+        }
+        
+    </script>
+
+</head>
+
+<body bgcolor="#69788C">
+
+    <center>
+
+    <img src="Img/TeamLiquid Inicial.png" width="30%">
+
+    <br><br>
+
+    <table border='0' witdh='600'>
+    <form name="form1" method="post" action="" onsubmit="return validarForm()">
+
+        <tr height='25px' bgcolor='#F2F2F2'>
+
+            <td width='180' height='25px' align='center' style='color:#011C40;'> <b> LOGIN </b> </td>
+            <td width='180' height='25px' align='center'> <b> <input type="text" name="fLogin" size="20" maxlength="60"> </b> </td>
+
+        </tr>
+
+        <tr height='25px' bgcolor='#F2F2F2'>
+
+            <td width='180' height='25px' align='center' style='color:#011C40;'> <b> SENHA </b> </td>
+            <td width='180' height='25px' align='center'> <b> <input type="password" name="fSenha" size="20" maxlength="60"> </b> </td>
+
+        </tr>
+
+        <tr height='25px' bgcolor='#F2F2F2'>
+
+            <td colspan='2' width='180' height='30' align='center'>  <input type="submit" value="Gravar" style="width: 120px; height: 50px;"> </td>
+            
+        </tr>
+
+    </form>
+    </table>
+
+    <br>
+
+    </center>
+
+</body> 
+</html>

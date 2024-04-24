@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function validarForm() {
+
+        $nome = this.form1.fNome.value
+        $idade = this.form1.fIdade.value
+
+        $curso = this.form1.fCurso.value
+        $turno = this.form1.fTurno.value
+        $Sexo = this.form1.fSexo.value
+
+        
+
+        $professor1 = this.form1.fProfessor1.value
+        $professor2 = this.form1.fProfessor2.value
+        
+        $html = this.form1.Html.checked
+        $javascript = this.form1.JavaScript.checked
+        $arduino = this.form1.Arduíno.checked
+        $logica = this.form1.Lógica.checked
+        $gestalt = this.form1.Gestalt.checked
+
+        $materias_escolhidas = ""
+
+       
+
+        if (this.form1.Html.checked) {
+                $materias_escolhidas = $materias_escolhidas+ " html"
+            }
+
+            if (this.form1.JavaScript.checked) {
+                $materias_escolhidas = $materias_escolhidas+ " javascript"
+            }
+
+            if (this.form1.Arduíno.checked) {
+                $materias_escolhidas = $materias_escolhidas+ " arduino"
+            }
+
+            if (this.form1.Lógica.checked) {
+                $materias_escolhidas = $materias_escolhidas+ " logica"
+            }
+
+            if (this.form1.Gestalt.checked) {
+                $materias_escolhidas = $materias_escolhidas+ " gestalt"
+            }
+
+         
+            document.write("<center>")
+            document.write("<body background ='Img/Fundo.png'>")
+            document.write("<br><br>")
+            document.write("<font size='7' color='f3d34a'> <b> INFORMAÇÕES SOBRE O ALUNO </b> </font> <br><br><br><br><br>")
+            document.write("</center>")
+            document.write("<font size='4' color='f3d34a'> <b> Seu Nome é " + $nome + "</b> </font>")
+            document.write("<br><br>")
+            document.write("<font size='4' color='f3d34a'> <b> Sua Idade é: " + $idade + "</b> </font>")
+            document.write("<br><br>")
+            document.write("<font size='4' color='f3d34a'> <b> Você Faz o Curso de: " + $curso + "</b> </font>")
+            document.write("<br><br>")
+            document.write("<font size='4' color='f3d34a'> <b>Você Faz no Turno da: " + $turno + "</b> </font>")
+            document.write("<br><br>")
+            document.write("<font size='4' color='f3d34a'> <b> Seu Professor é o " + $professor1 + " e o " + $professor2)
+            document.write("<br><br>")
+            document.write("<font size='4' color='f3d34a'> <b> Disciplinas Que Mais Gosta: " + $materias_escolhidas + "</b> </font>")
+            document.write("<br><br>")
+            document.write("<font size='4' color='f3d34a'> <b> Seu Sexo é: " + $Sexo + "</b> </font>")
+                
+            return false
+        }
+
+    </script>
+
+</head>
+
+<body background="Img/Tela de Fundo.png">
+        
+        <center>
+            <form name="form1" method="post" onsubmit="return validarForm()">
+
+        <br><br>
+
+        <table border="0">
+            <tr>
+                <td>
+                    <font size="4" color="f3d34a"> <strong> NOME </strong> <input type="text" name="fNome" size="20"></font>
+
+                </td>
+
+                <td>
+                    <font size="4" color="f3d34a"> <strong> IDADE </strong> <input type="text" name="fIdade" size="20"></font>
+
+                </td>
+
+            </tr>
+            
+            <br>
+
+            <tr>
+                <td>
+
+                <br>
+
+                    <font size="4" color="eea243"> <strong> SEXO </strong> </font> &nbsp&nbsp&nbsp&nbsp
+
+                    <font sizer="3" color="f3e37c"> <strong> MASCULINO </strong> <input type="radio" name="fSexo" value="Masculino"> &nbsp&nbsp&nbsp
+                    <font sizer="3" color="f3e37c"> <strong> FEMININO </strong> <input type="radio" name="fSexo" value="Feminino">
+
+                </td>
+
+            </tr>
+
+            <tr>
+                
+                <td>
+                    <br>
+
+                    <font size="4" color="f3d34a"> <strong> SEU CURSO </strong> <select name="fCurso"></font>
+                            <option value="emBranco"> [Escolha] </option>
+                            <option value="DS"> DS </option>
+                            <option value="Mecânica"> MECÂNICA </option>
+                            <option value="Colda"> SOLDA </option>
+
+                </td>
+
+                <td>
+                    <br>
+
+                    <font size="4" color="eea243"> <strong> SEU TURNO </strong> <select name="fTurno"></font>
+                        <option value="emBranco"> [Escolha] </option>
+                        <option value="Manhã"> MANHÃ </option>
+                        <option value="Tarde"> TARDE </option>
+                        <option value="Noite"> NOITE </option>
+
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td>
+                    <br>
+                    <font size="4" color="eea243"> <strong> SEU PROFESSOR </strong> <select name="fProfessor1">
+                        <option value="emBranco"> [Escolha] </option>
+                        <option value="Ricardo Corrêa"> Ricado Corrêa </option>
+                        <option value="Lucas Calu"> Lucas Calu</option>
+                </td>
+
+                <td>
+                    <br>
+                    <font size="4" color="f3d34a"> <strong> SEGUNDO PROFESSOR </strong> <select name="fProfessor2"></font>
+                        <option value="emBranco"> [Escolha] </option>
+                        <option value="Lucas Calu"> Lucas Calu </option>
+                        <option value="Ricardo Corrêa"> Ricardo Corrêa </option>
+                
+                </td>
+                
+            </tr>
+
+            <br><br>
+
+            <td>
+                <br>
+
+                <font size="4" color="f1d9a7"> <strong> ESCOLHA A DISCIPLINA QUE MAIS GOSTA </strong> </font><br>
+
+                        <input type="checkbox" name="Html"> <font size="3" color="E9C10E"> HTML </font> <br>
+                        <input type="checkbox" name="JavaScript"> <font size="3" color="E9C10E"> JAVASCRIPT </font> <br>
+                        <input type="checkbox" name="Arduíno"> <font size="3" color="E9C10E"> ARDUÍNO </font> <br>
+                        <input type="checkbox" name="Lógica"> <font size="3" color="E9C10E"> LÓGICA </font> <br>
+                        <input type="checkbox" name="Gestalt"> <font size="3" color="E9C10E"> GESTALT </font> <br>
+
+            </td>
+
+        </table>
+
+        <input type="submit" value="Gravar" style="width: 110px; height: 40px;"> &nbsp&nbsp
+        <input type="reset" value="Limpar" style="width: 110px; height: 40px;">
+
+        </form>
+        
+        </center>
+    
+</body>
+</html>

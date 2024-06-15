@@ -1,0 +1,178 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 1000px;
+    width: 1407px;
+    background-color: transparent;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.titulopr {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: start;
+    margin-left: 20px;
+
+    background: linear-gradient(45deg, #fffdfd, #0ee0e088, #abf8f4, #d39f65);
+    background-size: 400% 100%;
+    animation: degrade 7s linear infinite;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    outline: none;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.titulo {
+    font-size: 40px;
+    margin-left: 10px;
+    text-transform: uppercase;
+
+    background: linear-gradient(45deg, #e80000, #f4547c, #ec8bb2, #f37e7e, #fa4242);
+    background-size: 400% 100%;
+    animation: degrade 7s linear infinite;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    outline: none;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+
+}
+
+.textcentral {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    background: linear-gradient(45deg, #e65b5b, #a7587d, #ffffff, #e6a160, #eccd78);
+    background-size: 400% 100%;
+    animation: degrade 7s linear infinite;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    outline: none;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+
+}
+
+
+.dig {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.divcentral {
+    display: block;
+    height: 50px;
+    width: 280px;
+    margin-top: 0px;
+    background-color: #7a4f4f;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.div1 {
+    display: block;
+    height: 250px;
+    width: 280px;
+    margin-top: 10px;
+    background-color: #D95525;
+    
+}
+
+.div2 {
+    display: block;
+    height: 250px;
+    width: 280px;
+    margin-top: 10px;
+    background-color: #399DC1;
+    
+}
+
+.div3 {
+    display: block;
+    height: 250px;
+    width: 280px;
+    margin-top: 10px;
+    background-color: #F2A950;
+    
+}
+
+.div4 {
+    display: block;
+    height: 250px;
+    width: 280px;
+    margin-top: 10px;
+    background-color: #D9665B;
+    
+}
+
+.div5 {
+    display: block;
+    height: 250px;
+    width: 280px;
+    margin-top: 0px;
+    background-color: #bd6280;
+    
+}
+
+.div6 {
+    display: block;
+    height: 250px;
+    width: 280px;
+    margin-top: 0px;
+    background-color: #b384e9;
+    
+}
+
+.div7 {
+    display: block;
+    height: 250px;
+    width: 280px;
+    margin-top: -20px;
+    background-color: #e9e784;
+
+}
+
+.div8 {
+    display: block;
+    height: 250px;
+    width: 280px;
+    margin-top: -20px;
+    background-color: #96e2ec;
+
+}
